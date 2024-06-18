@@ -7,14 +7,13 @@ module.exports = {
     colors: {
       transparent: 'transparent',
       current: 'currentColor',
-      'white': '#ffffff',
-      'purple': '#3f3cbb',
-      'midnight': '#121063',
-      'metal': '#565584',
-      'tahiti': '#3ab7bf',
-      'silver': '#ecebff',
-      'bubble-gum': '#ff77e9',
-      'bermuda': '#78dcca'
+      'white' : '#ffff',
+      'neon' : '#64DFB2',
+      'green-sub' : '#CCF6EC',
+      'light-bg' : '#192025',
+      'main-bg' : '#040D14',
+      'grey-sub' : '#556068',
+      'light-grey' : '#A4AEB6'
     },
   },
   plugins: [],

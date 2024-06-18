@@ -1,9 +1,10 @@
 export default function LandingPage() {
     return (
-      <div class="bg-midnight text-tahiti">
-         <h1 className="text-3xl font-bold underline">
-          Hello world!
-        </h1>
+      <div>
+         <div className="bg-light-bg m-4 rounded-md">
+          <h1 className="text-neon text-center">hi there</h1>
+          <h1 className="text-neon text-center">hi there</h1>
+         </div>
       </div>
     )
   }
