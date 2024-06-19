@@ -9,12 +9,18 @@ module.exports = {
       current: 'currentColor',
       'white' : '#ffff',
       'neon' : '#64DFB2',
-      'green-sub' : '#CCF6EC',
+      'green' : '#CCF6EC',
       'light-bg' : '#192025',
       'main-bg' : '#040D14',
-      'grey-sub' : '#556068',
+      'grey' : '#556068',
       'light-grey' : '#A4AEB6'
     },
+    extend: {
+      fontFamily: {
+        subtext :["Poppins", "sans-serif"],
+        header : ["Quantico", "sans-serif" ]
+      }
+    }
   },
   plugins: [],
 }
