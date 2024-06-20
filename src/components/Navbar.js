@@ -24,7 +24,7 @@ export default function Navbar() {
               return (
                 <span>
                   <Link to={item.path}>
-                    <span className="text-green font-light">{item.title}</span>
+                    <span className="text-green font-light hover:line-through">{item.title}</span>
                   </Link>
                 </span>
               )
