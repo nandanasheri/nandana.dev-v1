@@ -1,6 +1,5 @@
 import githublogo from "../assets/github-mark.svg";
 import linkedinlogo from "../assets/linkedin.svg";
-import { FaLinkedin } from "react-icons/fa";
 
 
 export default function Footer() {
@@ -11,7 +10,7 @@ export default function Footer() {
             <img className="w-8 fill-grey" src={githublogo} alt="GitHubLogo"/>
             </a>
             <a href="https://www.linkedin.com/in/nandana-sheri/">
-                <img className="w-8 bg-grey" src={linkedinlogo} alt="GitHubLogo"/>
+                <img className="w-8 fill-grey" src={linkedinlogo} alt="LinkedIn Logo"/>
             </a>
         </div>
     )

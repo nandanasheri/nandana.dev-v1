@@ -13,7 +13,8 @@ module.exports = {
       'light-bg' : '#192025',
       'main-bg' : '#040D14',
       'grey' : '#556068',
-      'light-grey' : '#A4AEB6'
+      'light-grey' : '#A4AEB6',
+      'grey-sub' : '#798A98'
     },
     extend: {
       fontFamily: {
