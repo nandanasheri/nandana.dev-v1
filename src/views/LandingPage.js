@@ -14,6 +14,25 @@ export default function LandingPage() {
               Resume</button>
           </div>
          </div>
+         <div className="mx-10">
+         <h1 className=" text-5xl font-subtext font-bold text-neon">&lt;about/&gt;</h1>
+
+         <div className="flex items-center gap-12">
+          <div className="w-1/2">
+            <p className="text-green">hi :) i’m nandana and i am a computer science major at the university of illinois chicago. </p>
+            <p className="text-green">I realized that I enjoyed being on a computer beyond Club Penguin when I discovered the &lt;marquee&gt; tag in HTML in middle school</p>
+          </div>
+          <div>
+            hi
+          </div>
+         </div>
+         <div>
+
+         </div>
+         <div>
+
+         </div>
+         </div>
       </div>
     )
   }
