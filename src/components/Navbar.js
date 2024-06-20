@@ -19,7 +19,7 @@ const NavData = [
 ]
 export default function Navbar() {
     return (
-        <div className="bg-light-bg mx-10 h-10 -mt-6 w-[calc(100vw-5rem)] rounded-2xl border border-grey fixed flex justify-end items-center gap-6 pr-8">
+        <div className="bg-light-bg mx-10 mt-5 h-10 w-[calc(100vw-5rem)] rounded-2xl border border-grey fixed top-0 flex justify-end items-center gap-6 pr-8">
             {NavData.map((item) => {
               return (
                 <span>
