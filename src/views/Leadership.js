@@ -42,7 +42,7 @@ export default function Leadership() {
               <p className="text-green text-md">SparkHacks was a collaborative initiative by WiCS and other student organizations from the Computer Science 
               Department at UIC. I was a part of the Communications Team for SparkHacks 2023 and Co-Director for 
               SparkHacks 2024.</p>
-              <p className="text-green text-md pt-16">You’d be surprised at how many students go about completing a whole degree 
+              <p className="text-green text-md pt-16">You'd be surprised at how many students go about completing a whole degree 
                 in CS with the bare minimum technical skills. SparkHacks was brought to give students an opportunity to build their 
                 own skills, to create something from the ground up, free from the shackles of an autograder.</p>
             </div>
