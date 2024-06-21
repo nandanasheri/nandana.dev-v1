@@ -71,6 +71,12 @@ export default function Projects() {
             <ProjectTile title={item.title} website={item.website} repo={item.repo} number={item.number} tags={item.tags} img={item.img} desc={item.desc}/>
             )
           })}
+          <h1 className="text-green text-3xl font-semibold mt-12">more projects</h1>\
+          <div className="bg-white flex justify-center items-center gap-4">
+            <p>hi</p>
+            <p>hi</p>
+            <p>hi</p>
+          </div>
           
         </div>
 
