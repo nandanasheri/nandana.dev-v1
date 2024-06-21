@@ -6,6 +6,7 @@ import { FaExternalLinkAlt } from "react-icons/fa";
 import { IconContext } from "react-icons";
 import { FaGithub } from "react-icons/fa";
 import SkillTag from "../components/SkillTag";
+import SideProject from "../components/SideProject";
 
 const MainProjects = [
   {
@@ -26,6 +27,30 @@ const MainProjects = [
     img: timesheet,
     desc: "Application to generate Timesheet for Teaching Assistants by scraping hours from Google Calendar using Google OAuth2, Node, Express and React"
   }
+]
+
+const SideProjects = [
+  {
+    title:"Blackboard Remodeled",
+    website:"https://editor.p5js.org/nsher3/full/NZ0PKOD_y",
+    repo:"https://github.com/nandanasheri/blackboard-art-project",
+    stack: "HTML, CSS, p5.js",
+    desc: "This website probes the question of what constitutes Art by taking a utility like Blackbaord - a learning tool to restructure it to be about the human mind."
+  },
+  {
+    title:"Data Visualizations of Chicago Crimes",
+    website:"https://nandanasheri.github.io/",
+    repo:"https://github.com/nandanasheri/nandanasheri.github.io",
+    stack: "Vega-Lite, Pandas, Python",
+    desc: "An interactive data visualizations analysis tool to enable users to explore crime concentration across different neighborhoods"
+  },
+  {
+    title:"Negentropic Force",
+    website:"https://editor.p5js.org/nsher3/full/6A8JKRUlR",
+    repo:"https://github.com/nandanasheri/negentropic-force",
+    stack: "p5.js, HTML",
+    desc: "A generative composition using p5.js which induces a trance and psychedelic effect in the viewer's eyes."
+  },
 ]
 
 
@@ -72,10 +97,12 @@ export default function Projects() {
             )
           })}
           <h1 className="text-green text-3xl font-semibold mt-12">more projects</h1>\
-          <div className="bg-white flex justify-center items-center gap-4">
-            <p>hi</p>
-            <p>hi</p>
-            <p>hi</p>
+          <div className="bg- flex justify-center items-start gap-4">
+            {SideProjects.map((item) => {
+              return (
+                <SideProject title={item.title} desc={item.desc} website={item.website} repo={item.repo} stack={item.stack} />
+              )
+            })}
           </div>
           
         </div>
