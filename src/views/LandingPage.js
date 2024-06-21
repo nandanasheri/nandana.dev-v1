@@ -13,11 +13,12 @@ export default function LandingPage() {
         <Navbar/>
 
          {/* Landing Page  */}
-        <div className="m-10 rounded-2xl h-[85vh] flex items-center justify-center">
-          <div className="-z-50 fixed">
+        
+        <div className="bg- m-10 rounded-2xl h-[90vh] flex items-center justify-center">
+          <div className="-z-50 fixed ">
             <BgSketch/>
           </div>
-          <div>
+          <div className="bg-light-bg p-7 rounded-3xl opacity-90">
             <h1 className=" text-8xl font-header font-extrabold text-neon text-">nandana sheri</h1>
             <h1 className="text-green text-xl">I like to build things but I usually end up breaking them</h1>
             <a href="https://docs.google.com/document/d/1OoEzRah3FfEQy5hdEq-RiiouGUCwAqS2/edit?usp=sharing&ouid=105112142350715475424&rtpof=true&sd=true">
@@ -30,7 +31,7 @@ export default function LandingPage() {
         </div>
 
         {/* About Section */}
-        <div className="bg- m-auto max-w-4xl pt-6 mb-6">
+        <div className="bg-main-bg m-auto max-w-4xl pt-6">
           <h1 className=" text-5xl font-subtext font-bold text-neon">&lt;about/&gt;</h1>
 
           <div className="bg- flex items-start justify-between gap-12 h-85">
@@ -75,9 +76,8 @@ export default function LandingPage() {
             </div>
 
           </div>
+          <Footer/>
          </div>
-
-         <Footer/>
 
       </div>
     )
