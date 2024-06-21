@@ -14,7 +14,8 @@ module.exports = {
       'main-bg' : '#040D14',
       'grey' : '#556068',
       'light-grey' : '#A4AEB6',
-      'grey-sub' : '#798A98'
+      'grey-sub' : '#798A98',
+      'dark-bg' : '#0B151D',
     },
     extend: {
       fontFamily: {

@@ -46,7 +46,7 @@ export default function LandingPage() {
             <div className="bg- w-1/2">
               <p className="text-green text-lg">My first ever CS class was in eleventh grade where I was  1 of the 5 girls in a classroom of 45 boys and realized that 
                 coding never felt like studying</p>
-              <p className="text-green text-lg pt-14">because, for the first time in my life I wasn’t given a textbook and asked to swallow it whole to reproduce onto an exam sheet.</p>
+              <p className="text-green text-lg pt-14">because, for the first time in my life I wasn't given a textbook and asked to swallow it whole to reproduce onto an exam sheet.</p>
             </div>
 
           </div>
