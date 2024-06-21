@@ -3,6 +3,7 @@ import Footer from "../components/Footer";
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import React, { useState } from "react";
+import SkillTag from "../components/SkillTag";
 
 const TabData = [
   {
@@ -90,17 +91,33 @@ export default function Experience() {
             > 
               <Tab sx={{ color: '#CCF6EC'}} label="DEVELOP FOR GOOD" /> 
               <Tab sx={{ color: '#CCF6EC' }} label="CNA INSURANCE" /> 
-              <Tab sx={{ color: '#CCF6EC' }} label="NORTHWESTERN UNIVERSITY"/> 
-              <Tab sx={{ color: '#CCF6EC' }} label="UNIVERSITY OF ILLINOIS CHICAGO" /> 
+              <Tab sx={{ color: '#CCF6EC' }} label="UNIVERSITY OF ILLINOIS CHICAGO"/> 
+              <Tab sx={{ color: '#CCF6EC' }} label="NORTHWESTERN UNIVERSITY" /> 
             </Tabs> 
-
-            <div className="bg-">
-              {TabData.map((item) => (
-                <TabPanel value={tabVal} index={item.index} head={item.heading} date={item.date} exp={item.exp}></TabPanel>
-              ))}
-            </div>
+            {TabData.map((item) => (
+              <TabPanel value={tabVal} index={item.index} head={item.heading} date={item.date} exp={item.exp}></TabPanel>
+            ))}
             
           </div>
+        </div>
+
+        <h1 className="m-auto max-w-4xl pt-12 mb-6 text-3xl text-center font-subtext font-regular text-neon">skills</h1>
+        
+        <div className="bg- m-auto max-w-4xl p-3 mb-6 justify-between flex gap-8">
+          <SkillTag tag="React.js"/>
+          <SkillTag tag="Node.js"/>
+          <SkillTag tag="Express.js"/>
+          <SkillTag tag="Python"/>
+          <SkillTag tag="C/C++"/>
+          <SkillTag tag="SQL"/>
+        </div>
+
+        <div className="bg- m-auto max-w-4xl p-3 mb-6 justify-center flex gap-8">
+          <SkillTag tag="Tailwind CSS"/>
+          <SkillTag tag="HTML"/>
+          <SkillTag tag="Figma"/>
+          <SkillTag tag="Agile"/>
+          <SkillTag tag="MERN"/>
         </div>
 
         <Footer/>
