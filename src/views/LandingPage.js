@@ -4,6 +4,7 @@ import Footer from "../components/Footer";
 import profile from "../assets/nan.jpg";
 import confused from "../assets/confusednaan.JPG";
 import spark from "../assets/spark.JPG";
+import ScriptTag from 'react-script-tag';
 
 
 export default function LandingPage() {
@@ -13,6 +14,7 @@ export default function LandingPage() {
 
          {/* Landing Page  */}
         <div className="bg-light-bg m-10 rounded-2xl h-[85vh] flex items-center justify-center">
+          {/* <ScriptTag type="text/javascript" src="sketch.js" /> */}
           <div>
             <h1 className=" text-8xl font-header font-extrabold text-neon text-">nandana sheri</h1>
             <h1 className="text-green text-xl">I like to build things but I usually end up breaking them</h1>
