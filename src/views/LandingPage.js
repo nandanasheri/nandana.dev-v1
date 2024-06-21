@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import profile from "../assets/nan.jpg";
 import confused from "../assets/confusednaan.JPG";
+import spark from "../assets/spark.JPG";
 
 
 export default function LandingPage() {
@@ -39,8 +40,8 @@ export default function LandingPage() {
 
           <div className="bg- flex items-start justify-between gap-12 h-85 mt-16">
             <div className="bg- w-1/2 h-full">
-              <img className="object-cover h-80 w-full rounded-2xl " src={profile} alt="profile"/>
-              <h4 className="m-4 text-grey text-center">full circle moment from Python being my first language to the last class I TA for</h4>
+              <img className="object-cover h-80 w-full rounded-2xl " src={spark} alt="profile"/>
+              <h4 className="m-4 text-grey text-center">co-directing sparkhacks - UIC's hackathon taught me infinite patience</h4>
             </div>
 
             <div className="bg- w-1/2">
