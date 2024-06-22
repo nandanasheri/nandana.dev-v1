@@ -71,7 +71,7 @@ function ProjectTile (props) {
                     <SkillTag tag={item} />
                 )
                 })}
-                <h1 className="text-grey text-5xl font-bold">{props.number}</h1>
+                <h1 className="text-grey text-6xl font-bold">{props.number}</h1>
             </div>
             <img src={props.img} alt="tile" />
             <div className="bg-dark-bg my-4 p-4 rounded-3xl">
@@ -86,25 +86,27 @@ function ProjectTile (props) {
 export default function Projects() {
 
     return (
-      <div>
-        <Navbar/>
-        {/* Projects Section */}
-        <div className="bg- m-auto max-w-4xl pt-12 mb-6">
-          <h1 className=" text-5xl font-subtext font-bold text-neon">&lt;projects/&gt;</h1>
-          {MainProjects.map((item) => {
-            return (
-            <ProjectTile title={item.title} website={item.website} repo={item.repo} number={item.number} tags={item.tags} img={item.img} desc={item.desc}/>
-            )
-          })}
-          <h1 className="text-green text-3xl font-semibold mt-12">more projects</h1>\
-          <div className="bg- flex justify-center items-start gap-4">
-            {SideProjects.map((item) => {
+      <div className="flex flex-col min-h-screen">
+        <div className="flex-1">
+          <Navbar/>
+          {/* Projects Section */}
+          <div className="bg- m-auto max-w-4xl pt-12 mb-6">
+            <h1 className=" text-5xl font-subtext font-bold text-neon">&lt;projects/&gt;</h1>
+            {MainProjects.map((item) => {
               return (
-                <SideProject title={item.title} desc={item.desc} website={item.website} repo={item.repo} stack={item.stack} />
+              <ProjectTile title={item.title} website={item.website} repo={item.repo} number={item.number} tags={item.tags} img={item.img} desc={item.desc}/>
               )
             })}
+            <h1 className="text-green text-3xl font-semibold mt-12">more projects</h1>\
+            <div className="bg- flex justify-center items-start gap-4">
+              {SideProjects.map((item) => {
+                return (
+                  <SideProject title={item.title} desc={item.desc} website={item.website} repo={item.repo} stack={item.stack} />
+                )
+              })}
+            </div>
+            
           </div>
-          
         </div>
 
         <Footer/>

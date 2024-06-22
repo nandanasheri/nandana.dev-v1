@@ -77,51 +77,52 @@ export default function Experience() {
   };
 
     return (
-      <div>
-        <Navbar/>
-
-        {/* Experience Section */}
-        <h1 className="m-auto max-w-4xl pt-12 mb-6 text-5xl font-subtext font-bold text-neon">&lt;experience/&gt;</h1>
-        <div className="bg- m-auto max-w-4xl pt-12 mb-6">
-          <div className="bg- flex gap-4">
-            <Tabs 
-              value={tabVal} 
-              onChange={handleTab} 
-              orientation="vertical"
-            > 
-              <Tab sx={{ color: '#CCF6EC'}} label="DEVELOP FOR GOOD" /> 
-              <Tab sx={{ color: '#CCF6EC' }} label="CNA INSURANCE" /> 
-              <Tab sx={{ color: '#CCF6EC' }} label="UNIVERSITY OF ILLINOIS CHICAGO"/> 
-              <Tab sx={{ color: '#CCF6EC' }} label="NORTHWESTERN UNIVERSITY" /> 
-            </Tabs> 
-            {TabData.map((item) => (
-              <TabPanel value={tabVal} index={item.index} head={item.heading} date={item.date} exp={item.exp}></TabPanel>
-            ))}
-            
-          </div>
-        </div>
-
-        <h1 className="m-auto max-w-4xl pt-12 mb-6 text-3xl text-center font-subtext font-regular text-neon">skills</h1>
+      <div className="flex flex-col min-h-screen">
         
-        <div className="bg- m-auto max-w-4xl p-3 mb-6 justify-between flex gap-8">
-          <SkillTag tag="React.js"/>
-          <SkillTag tag="Node.js"/>
-          <SkillTag tag="Express.js"/>
-          <SkillTag tag="Python"/>
-          <SkillTag tag="C/C++"/>
-          <SkillTag tag="SQL"/>
-        </div>
+        <div className="flex-1"> 
+          <Navbar/>
+          {/* Experience Section */}
+          <h1 className="m-auto max-w-4xl pt-12 mb-6 text-5xl font-subtext font-bold text-neon">&lt;experience/&gt;</h1>
+          <div className="bg- m-auto max-w-4xl pt-12 mb-6">
+            <div className="bg- flex gap-4">
+              <Tabs 
+                value={tabVal} 
+                onChange={handleTab} 
+                orientation="vertical"
+              > 
+                <Tab sx={{ color: '#CCF6EC'}} label="DEVELOP FOR GOOD" /> 
+                <Tab sx={{ color: '#CCF6EC' }} label="CNA INSURANCE" /> 
+                <Tab sx={{ color: '#CCF6EC' }} label="UNIVERSITY OF ILLINOIS CHICAGO"/> 
+                <Tab sx={{ color: '#CCF6EC' }} label="NORTHWESTERN UNIVERSITY" /> 
+              </Tabs> 
+              {TabData.map((item) => (
+                <TabPanel value={tabVal} index={item.index} head={item.heading} date={item.date} exp={item.exp}></TabPanel>
+              ))}
+              
+            </div>
+          </div>
 
-        <div className="bg- m-auto max-w-4xl p-3 mb-6 justify-center flex gap-8">
-          <SkillTag tag="Tailwind CSS"/>
-          <SkillTag tag="HTML"/>
-          <SkillTag tag="Figma"/>
-          <SkillTag tag="Agile"/>
-          <SkillTag tag="MERN"/>
-        </div>
+          <h1 className="m-auto max-w-4xl pt-12 mb-6 text-3xl text-center font-subtext font-regular text-neon">skills</h1>
+          
+          <div className="bg- m-auto max-w-4xl p-3 mb-6 justify-between flex gap-8">
+            <SkillTag tag="React.js"/>
+            <SkillTag tag="Node.js"/>
+            <SkillTag tag="Express.js"/>
+            <SkillTag tag="Python"/>
+            <SkillTag tag="C/C++"/>
+            <SkillTag tag="SQL"/>
+          </div>
 
+          <div className="bg- m-auto max-w-4xl p-3 mb-6 justify-center flex gap-8">
+            <SkillTag tag="Tailwind CSS"/>
+            <SkillTag tag="HTML"/>
+            <SkillTag tag="Figma"/>
+            <SkillTag tag="Agile"/>
+            <SkillTag tag="MERN"/>
+          </div>
+
+        </div>
         <Footer/>
-
       </div>
     )
   }
