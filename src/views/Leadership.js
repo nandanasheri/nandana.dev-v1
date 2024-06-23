@@ -25,7 +25,7 @@ const StatsData = [
     ]
   },
   {
-    org:"WiCS",
+    org:"Women in Computer Science",
     stats:[
       {
         num:"100",
@@ -94,10 +94,13 @@ export default function Leadership() {
               </div>
             </div>
 
-            <h1 className="text-3xl font-semibold text-green mt-6 text-center">Org Involvment by the Numbers:</h1>
+            <h1 className="text-3xl font-semibold text-green mt-6 text-center">Involvment by the Numbers:</h1>
 
-            <StatsTile/>
-            <StatsTile/>
+            {StatsData.map((item) => {
+              return (
+                <StatsTile org = {item.org} stats ={item.stats}/>
+              )
+            })}
             
 
           </div>

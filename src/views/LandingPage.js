@@ -56,7 +56,7 @@ export default function LandingPage() {
             </div>
 
             <div className="bg- w-1/2">
-              <p className="text-green text-lg">My first ever CS class was in eleventh grade where which was where I realized two things: </p>
+              <p className="text-green text-lg">My first ever CS class was in eleventh grade which was where I realized two things: </p>
               <p className="text-green text-lg">- <span class="text-neon font-semibold">Nobody</span> actually knows how technology works</p>
               <p className="text-green text-lg">- Coding <span class="text-neon font-semibold">never felt like studying</span></p>
 
