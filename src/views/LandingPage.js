@@ -5,9 +5,16 @@ import profile from "../assets/nan.jpg";
 import confused from "../assets/confusednaan.JPG";
 import spark from "../assets/spark.JPG";
 import BgSketch from "../components/bgSketch";
+import React from 'react'
+import { useMediaQuery } from 'react-responsive'
 
 
 export default function LandingPage() {
+  const isDesktopOrLaptop = useMediaQuery({query: '(min-width: 1224px)'})
+  const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' })
+  console.log(isDesktopOrLaptop)
+  console.log(isTabletOrMobile)
+
     return (
       <div className="flex flex-col min-h-screen">
 
@@ -39,7 +46,7 @@ export default function LandingPage() {
 
           <div className="bg- flex items-start justify-between gap-12 h-85">
             <div className="bg- w-1/2 pt-8">
-              <p className="text-green text-lg">Hi :) I'm Nandana and I am a Computer Science major at the <span class="underline decoration-neon decoration-4">University of Illinois Chicago.</span> Graduating in December 2024, I'm currently looking for SWE Fall 2024 Internships and New Grad Roles starting 2025.</p>
+              <p className="text-green text-lg">Hi :) I'm Nandana and I am a Computer Science major at the <span class="underline decoration-neon decoration-4">University of Illinois Chicago.</span> Graduating in May 2025, I'm currently looking for SWE Summer 2025 Internships!</p>
               <p className="text-green text-lg pt-16">I realized that I enjoyed being on a computer beyond Club Penguin when I discovered the <span class="underline decoration-neon decoration-4"> &lt;marquee&gt; tag in HTML</span> in middle school.</p>
             </div>
 
