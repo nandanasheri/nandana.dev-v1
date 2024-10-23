@@ -6,14 +6,8 @@ import confused from "../assets/confusednaan.JPG";
 import spark from "../assets/spark.JPG";
 import BgSketch from "../components/bgSketch";
 import React from 'react'
-import { useMediaQuery } from 'react-responsive'
-
 
 export default function LandingPage() {
-  const isDesktopOrLaptop = useMediaQuery({query: '(min-width: 1224px)'})
-  const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' })
-  console.log(isDesktopOrLaptop)
-  console.log(isTabletOrMobile)
 
     return (
       <div className="flex flex-col min-h-screen">
